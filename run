@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if [ ! -e build ]; then
+	./boot
+fi
+
+cd build 
+
+echo --- Now build the the project
+
