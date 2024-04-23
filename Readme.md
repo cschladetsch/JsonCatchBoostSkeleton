@@ -1,8 +1,8 @@
 # Skeleton
 
-Basic C++17 framework using [CMake](cmake.org) 3.27 that supports:
+Basic C++17 framework using [CMake](https://cmake.org) 3.27 that supports:
 
-* [Boost](boost.org) 1.84
+* [Boost](https://boost.org) 1.84
 * [Nohlmann Json](https://github.com/nlohmann/json)
 * [Catch2](https://github.com/catchorg/Catch2)
 
