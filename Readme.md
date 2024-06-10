@@ -14,7 +14,9 @@ To build from scratch:
 
 ```bash
 $ git clone git@github.com:cschladetsch/Skeleton.git project
+$
 $ cd project
-$ ./boot
+$ sh boot
 ```
+
 
