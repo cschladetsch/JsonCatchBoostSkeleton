@@ -20,16 +20,11 @@ find_package(Boost 1.84 REQUIRED COMPONENTS chrono filesystem system)
 include_directories(${CMAKE_SOURCE_DIR}/include ${Boost_INCLUDE_DIRS})
 
 ### Include Catch2 as a submodule
-add_subdirectory(external/Catch2 ${CMAKE_BINARY_DIR}/catch2_build)
+#add_subdirectory(external/Catch2 ${CMAKE_BINARY_DIR}/catch2_build)
+add_subdirectory(external/Catch2)#// ${CMAKE_BINARY_DIR}/catch2_build)
 
 ## Use nlohmann/json 
 add_subdirectory(external/json)
-
-## Define your test executable
-add_executable(MyTests tests/test_file.cpp)
-
-## Link the nlohmann/json library to your test target
-target_link_libraries(MyTests PRIVATE nlohmann_json::nlohmann_json Catch2::Catch2)
 
 ## Assuming your header files are located in the "include" directory
 file(GLOB_RECURSE HEADER_FILES "${CMAKE_CURRENT_SOURCE_DIR}/include/*.h")
